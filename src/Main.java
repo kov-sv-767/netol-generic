@@ -3,7 +3,7 @@ public class Main {
         MagicBox <String> box1 = new MagicBox<>(4);
         box1.add("игра");
         box1.add("кролик");
-        //box1.add("шляпа");
+        box1.add("шляпа");
         //box1.add("зеркало");
         box1.pick();
 

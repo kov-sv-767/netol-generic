@@ -20,7 +20,7 @@ public class MagicBox<T> {
         return false;
     }
     Random random = new Random();
-
+    int randomInt;
     public T pick() {
 
         for (int i = 0; i < items.length; i++) {
@@ -28,13 +28,13 @@ public class MagicBox<T> {
                 throw new RuntimeException("Коробка не заполнена, осталось заполнить " + (items.length - filled) + " ячеек.");
     //            continue;
             } else {
-                int randomInt = random.nextInt(items.length);
+                randomInt = random.nextInt(items.length);
                 System.out.println("Коробка заполнена. Случайный элемент из коробки: " + items[randomInt]);
                 System.out.println();
-                return items[randomInt];
-            }
+
+            }return items[randomInt];
         }
-        return null;
+        return items[randomInt];
     }
 }
 
